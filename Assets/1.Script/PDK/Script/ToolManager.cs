@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using Mono.Data.Sqlite;
+using System.Data;
+using System;
 
 public class ToolManager : MonoBehaviour {
     public GameObject myKnife;
@@ -27,7 +31,7 @@ public class ToolManager : MonoBehaviour {
         //
 
     }
-    private void AccessDB() {
+    private void DBValue() {
 
     }
 
