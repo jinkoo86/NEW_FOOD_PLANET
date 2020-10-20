@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ee1c4bb0a2904f3439dcc45232b33ea2
+=======
+<<<<<<< Updated upstream
+guid: 55df7b0b1b7590948b5e15a7b17bccec
+=======
+<<<<<<<< Updated upstream:Assets/Oculus/Spatializer/Plugins/x86_64/AudioPluginOculusSpatializer.dll.meta
+guid: 93cfb1133e84c4b46aed76a02bb76ccb
+========
+guid: 34e28fca79c0fd648aeeec6bba4c8a5b
+>>>>>>>> Stashed changes:Assets/Scenes/Oculus/Spatializer/Plugins/x86_64/AudioPluginOculusSpatializer.dll.meta
+>>>>>>> Stashed changes
+>>>>>>> KJK
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -12,6 +24,14 @@ PluginImporter:
   validateReferences: 1
   platformData:
   - first:
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+      Any: 
+    second:
+      enabled: 1
+=======
+>>>>>>> KJK
       : Editor
     second:
       enabled: 0
@@ -22,21 +42,46 @@ PluginImporter:
       Any: 
     second:
       enabled: 0
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> KJK
       settings: {}
   - first:
       Editor: Editor
     second:
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+      enabled: 0
+      settings:
+        CPU: x86_64
+        DefaultValueInitialized: true
+=======
+>>>>>>> KJK
       enabled: 1
       settings:
         CPU: X86_64
         DefaultValueInitialized: true
         OS: Windows
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> KJK
   - first:
       Standalone: Linux64
     second:
       enabled: 1
       settings:
+<<<<<<< HEAD
         CPU: AnyCPU
+=======
+<<<<<<< Updated upstream
+        CPU: x86_64
+=======
+        CPU: AnyCPU
+>>>>>>> Stashed changes
+>>>>>>> KJK
   - first:
       Standalone: OSXUniversal
     second:

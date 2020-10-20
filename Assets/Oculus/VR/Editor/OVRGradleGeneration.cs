@@ -135,15 +135,12 @@ public class OVRGradleGeneration
 		UnityEngine.Debug.Log("OVRGradleGeneration triggered.");
 
 		var targetOculusPlatform = new List<string>();
-		if (OVRDeviceSelector.isTargetDeviceQuestFamily)
+		if (OVRDeviceSelector.isTargetDeviceQuest)
 		{
 			targetOculusPlatform.Add("quest");
 		}
 		OVRPlugin.AddCustomMetadata("target_oculus_platform", String.Join("_", targetOculusPlatform.ToArray()));
-		UnityEngine.Debug.LogFormat("QuestFamily = {0}: Quest = {1}, Quest2 = {2}", 
-			OVRDeviceSelector.isTargetDeviceQuestFamily,
-			OVRDeviceSelector.isTargetDeviceQuest,
-			OVRDeviceSelector.isTargetDeviceQuest2);
+		UnityEngine.Debug.LogFormat("Quest = {0}", OVRDeviceSelector.isTargetDeviceQuest);
 
 #if UNITY_2019_3_OR_NEWER
 		string gradleBuildPath = Path.Combine(path, "../launcher/build.gradle");

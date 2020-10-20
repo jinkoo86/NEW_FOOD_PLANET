@@ -35,8 +35,7 @@ public class OVRProjectConfig : ScriptableObject
 	public enum DeviceType
 	{
 		//GearVrOrGo = 0, // DEPRECATED
-		Quest = 1,
-		Quest2 = 2
+		Quest = 1
 	}
 
 	public enum HandTrackingSupport
@@ -108,7 +107,6 @@ public class OVRProjectConfig : ScriptableObject
 			projectConfig = ScriptableObject.CreateInstance<OVRProjectConfig>();
 			projectConfig.targetDeviceTypes = new List<DeviceType>();
 			projectConfig.targetDeviceTypes.Add(DeviceType.Quest);
-			projectConfig.targetDeviceTypes.Add(DeviceType.Quest2);
 			projectConfig.handTrackingSupport = HandTrackingSupport.ControllersOnly;
 			projectConfig.disableBackups = true;
 			projectConfig.enableNSCConfig = true;
@@ -124,10 +122,6 @@ public class OVRProjectConfig : ScriptableObject
 			if (!projectConfig.targetDeviceTypes.Contains(DeviceType.Quest))
 			{
 				projectConfig.targetDeviceTypes.Add(DeviceType.Quest);
-			}
-			if (!projectConfig.targetDeviceTypes.Contains(DeviceType.Quest2))
-			{
-				projectConfig.targetDeviceTypes.Add(DeviceType.Quest2);
 			}
 		}
 		return projectConfig;
