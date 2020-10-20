@@ -16,8 +16,10 @@ public class Close : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision other)
+    
+    public void OnClose()
     {
         menu.SetActive(false);
+        print("클로즈");
     }
 }

@@ -19,9 +19,9 @@ public class Volume : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnClickVol()
     {
-        if(isText)
+        if (isText)
         {
             text.SetActive(true);
             soundManager.SetActive(true);
