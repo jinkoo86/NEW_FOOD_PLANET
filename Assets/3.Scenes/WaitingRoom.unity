@@ -554,7 +554,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 10
 --- !u!223 &172588564
 Canvas:
   m_ObjectHideFlags: 0
@@ -4206,7 +4206,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608944819758037706}
-  m_Mesh: {fileID: -5523277661179574252, guid: bf75657d59f4f8847a3e0da2c7e04c29, type: 3}
+  m_Mesh: {fileID: 0}
 --- !u!4 &5006512735221484579
 Transform:
   m_ObjectHideFlags: 0
@@ -4914,6 +4914,7 @@ GameObject:
   - component: {fileID: 5006512736742102706}
   - component: {fileID: 4044710142551551108}
   - component: {fileID: 7718390322174070909}
+  - component: {fileID: 8296172667798398114}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -4921,6 +4922,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8296172667798398114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172667798398113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6948fae724771364eb7c85f1be740218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8296172668057901152
 GameObject:
   m_ObjectHideFlags: 0
@@ -4964,6 +4977,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5006512735670197016}
+  - component: {fileID: 8296172668856674572}
   m_Layer: 0
   m_Name: Knife
   m_TagString: Untagged
@@ -4971,6 +4985,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8296172668856674572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668856674571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea8b702641caa945b5e991db40781ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8296172669314694704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4980,6 +5006,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5006512735221484579}
+  - component: {fileID: 8296172669314694705}
   m_Layer: 0
   m_Name: hwaro
   m_TagString: Untagged
@@ -4987,6 +5014,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8296172669314694705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172669314694704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6948fae724771364eb7c85f1be740218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8534746676236574586
 Transform:
   m_ObjectHideFlags: 0
