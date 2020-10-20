@@ -17,12 +17,17 @@ public class ToolManager : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        //MyEquip 에서 
+        //MyEquip 에서 정보 가져오기
+
 
     }
 
     // Update is called once per frame
     void Update() {
+        //
+
+    }
+    private void AccessDB() {
 
     }
 

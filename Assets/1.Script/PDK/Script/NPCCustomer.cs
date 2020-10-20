@@ -72,7 +72,7 @@ public class NPCCustomer : MonoBehaviour {
         transform.position += dir * speed * Time.deltaTime;
     }
     private void UpdateOrder() {
-        //print("오더진입");q
+        //print("오더진입");
         //도착하면 그자리에 정지 후
         //랜덤돌려서 주문
         //근데 그냥 테스트용도로 1초뒤에 돌아가게
