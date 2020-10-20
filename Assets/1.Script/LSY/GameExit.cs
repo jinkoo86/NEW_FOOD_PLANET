@@ -18,11 +18,11 @@ public class GameExit : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //트리거 클릭하면 어플을 종료한다
+        /*//트리거 클릭하면 어플을 종료한다
         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
         {
             print("트리거 다운");
             //Application.Quit();
-        }
+        }*/
     }
 }
