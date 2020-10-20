@@ -17,7 +17,7 @@ public class LeftHand : MonoBehaviour
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hitinfo;
         lr.SetPosition(0, transform.position);
-        if (Physics.Raycast(ray, out hitinfo))
+        if (Physics.Raycast(ray, out hitinfo,100.0f))
         {
             if (hitinfo.transform.gameObject.name.Contains("Volume"))
             {

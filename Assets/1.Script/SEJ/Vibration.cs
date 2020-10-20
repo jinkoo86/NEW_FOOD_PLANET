@@ -16,6 +16,11 @@ public class Vibration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    public void OnVibration()
+    {
         if (isOn)
         {
             text.SetActive(true);
