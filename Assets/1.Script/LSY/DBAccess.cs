@@ -23,6 +23,7 @@ public class DBAccess : MonoBehaviour
 
         if (Application.platform == RuntimePlatform.Android)//실행플랫폼이 안드로이드일 경우
         {
+            //안드로이드 일 경우
             filepath = Application.persistentDataPath + "/DB.db";
             text0.text = "RuntimePlatform.Android 실행";
             if (!File.Exists(filepath))
@@ -44,6 +45,7 @@ public class DBAccess : MonoBehaviour
         }
         else
         {
+            //윈도우 일 경우
             filepath = Application.dataPath + "/StreamingAssets/DB.db";
             if (!File.Exists(filepath))
             {
@@ -52,7 +54,7 @@ public class DBAccess : MonoBehaviour
                 text0.text = "윈도우 환경 DB.db 실행";
             }
         }
-        //print("CopyDB()작동");
+        //print(filepath);
         string temp_filepath = "URI=file:" + filepath;
         try
         {
@@ -75,6 +77,7 @@ public class DBAccess : MonoBehaviour
 
             while (reader.Read())
             {
+                print("DBAccess while진입 성공");
                 ItemID = reader.GetString(0);
                 ItemName = reader.GetString(1);
                 ItemPrice = reader.GetInt32(2);
@@ -109,12 +112,14 @@ public class DBAccess : MonoBehaviour
                 s = "ERR";
                 //textConn.text = s;
             }
-            con.Clone();
+            //con.Clone();
+            con.Close();
         }
         catch (Exception e)
         {
             s = e.ToString();
         }
+        
 
     }
     // Start is called before the first frame update
