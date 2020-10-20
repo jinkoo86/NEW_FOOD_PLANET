@@ -3037,6 +3037,7 @@ GameObject:
   - component: {fileID: 1976972173}
   - component: {fileID: 1976972172}
   - component: {fileID: 1976972174}
+  - component: {fileID: 1976972175}
   m_Layer: 5
   m_Name: Exit_Img
   m_TagString: Untagged
@@ -3114,6 +3115,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 45, y: 40, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1976972175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976972170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 984f4a0e710c661409cf4f5f7d7277ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1986032880
 GameObject:
   m_ObjectHideFlags: 0
