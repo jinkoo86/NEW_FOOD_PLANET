@@ -20,6 +20,6 @@ public class Close : MonoBehaviour
     public void OnClose()
     {
         menu.SetActive(false);
-        print("클로즈ddd");
+        print("클로즈");
     }
 }
