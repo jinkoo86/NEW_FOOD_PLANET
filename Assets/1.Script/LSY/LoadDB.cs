@@ -5,16 +5,20 @@ using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoadDB : MonoBehaviour
 {
     GameObject textMoney;
+    int myMoney;
 
     // Start is called before the first frame update
     void Start()
     {
-        textMoney = GameObject.Find("Money_Text");
         DB();
+        textMoney = GameObject.Find("Money_Text");
+        textMoney.GetComponent<Text>().text = myMoney.ToString();//게임오브젝트의 텍스트 컴포넌트를 가져와 최초로 돈을 가져와 표시한다
+
     }
     public void DB() { 
         string filepath = string.Empty;
@@ -51,34 +55,21 @@ public class LoadDB : MonoBehaviour
 
             IDbCommand dbcmd = con.CreateCommand();
 
-            string sqlQuery2 = "UPDATE Money SET MyMoney = 100";
-            string sqlQuery = "SELECT MyMoney, DailyMoney FROM Money";
-
+            string sqlQuery2 = "UPDATE Money SET MyMoney = 300";
             dbcmd.CommandText = sqlQuery2;
-            
-
-            print("커맨드 텍스트 성공");
             IDataReader reader = dbcmd.ExecuteReader();
-            print("reader 변수대입 성공");
-            print(reader);
-            while (reader.Read())
-            {
-                print("1LoadDB while진입 성공");
-                int myMoney = reader.GetInt32(0);
-                int dailyMoney = reader.GetInt32(1);
-
-
-                Debug.Log("myMoney: " + myMoney + "dailyMoney: " + dailyMoney);
-            }
             reader.Close();
+
+            string sqlQuery = "SELECT MyMoney, DailyMoney FROM Money";
             dbcmd.CommandText = sqlQuery;
+
             reader = dbcmd.ExecuteReader();
-            while (reader.Read())
+
+            while (reader.Read())//셀렉트
             {
                 print("2LoadDB while진입 성공");
-                int myMoney = reader.GetInt32(0);
+                myMoney = reader.GetInt32(0);
                 int dailyMoney = reader.GetInt32(1);
-
 
                 Debug.Log("myMoney: " + myMoney + "dailyMoney: " + dailyMoney);
             }
