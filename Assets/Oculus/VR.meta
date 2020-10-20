@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 528d8f89a891aa04f821ea6742ded587
+=======
+<<<<<<<< Updated upstream:Assets/Oculus/VR.meta
+guid: 87c3f8ce82f45ba47bb7015782ddd1cf
+========
+guid: fe2f36533b9f2a7429dffb83925a5376
+>>>>>>>> Stashed changes:Assets/Scenes/Oculus/VR.meta
+>>>>>>> Stashed changes
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: b2524fa16222ec8448d5020d594c0114
+=======
+<<<<<<<< Updated upstream:Assets/Oculus/VR/Plugins/1.52.1/Win64.meta
+guid: d31ea29de2f49f1439d5d370317fdd9d
+========
+guid: 887b571014ca829408f309e1bb424100
+>>>>>>>> Stashed changes:Assets/Scenes/Oculus/VR/Plugins/1.52.1/Win64.meta
+>>>>>>> Stashed changes
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
